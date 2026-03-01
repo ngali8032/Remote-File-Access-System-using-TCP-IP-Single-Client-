@@ -49,3 +49,71 @@ String parsing & command handling
 Path manipulation
 
 Error handling
+
+⚙️ Supported Commands
+📂 Change Directory
+cd folder_name
+
+Moves into specified directory if exists.
+If not found → prints: 
+
+Invalid directory
+📄 Open File
+open filename.txt
+
+Uses:
+
+open() to get file descriptor
+
+read() to read content
+
+Displays file content in terminal.
+
+If file not found -> prints:
+
+Invalid file
+📁 path:- shows absolute path
+
+
+Program navigates directly to given path if valid.
+
+⬅ Go Back
+back
+
+Moves to parent directory.
+
+❌ Exit Program
+exit
+
+or
+
+quit
+
+Terminates the application safely.
+
+🖥 Example Session
+Current Path: /home/narendra
+
+> cd Projects
+Current Path: /home/narendra/Projects
+
+> open test.txt
+Displaying file content...
+
+> back
+Current Path: /home/narendra
+
+> exit
+Program terminated.
+🎯 Key Learning Outcomes
+
+✔ Linux system call usage
+✔ File descriptor management
+✔ Directory traversal logic
+✔ Path parsing and validation
+✔ Error handling for invalid inputs
+✔ Building mini-shell style applications
+
+🛠 Compile & Run
+gcc file_explorer.c
+./a.out
