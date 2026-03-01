@@ -1,1 +1,51 @@
 # Linux-file-Explorer-system-call-based-
+
+📂 Linux Mini File Explorer (Shell-Style | System Call Based)
+
+C | Linux | System Calls | Directory Traversal | File Handling
+
+📌 Project Overview
+
+This project is a shell-style interactive file explorer developed in C using Linux system calls.
+
+The program allows users to navigate directories and open files using commands similar to Linux shell.
+
+It supports:
+
+cd <directory> → Enter directory
+
+open <filename> → Open and read file
+
+<path> → Navigate directly to path
+
+back → Move to parent directory
+
+exit / quit → Terminate program
+
+Invalid input handling
+
+The implementation uses low-level system calls to understand how Linux handles filesystem operations internally.
+
+🧠 Concepts Used
+
+This project demonstrates practical usage of:
+
+opendir()
+
+readdir()
+
+closedir()
+
+open()
+
+read()
+
+close()
+
+File descriptors
+
+String parsing & command handling
+
+Path manipulation
+
+Error handling
