@@ -75,11 +75,11 @@ label:
 						goto label;
 					}
 					
-					/*Extra*/
+					//for printing file name..
 					printf("files information\n");
 					printf("File name:- %s\n", rd->d_name);
 					printf("Transferring file content to the client...\n");
-					/*Extra*/
+					
 
 					char ch[2];
 					while((read(fd, ch, 1))==1){
@@ -89,12 +89,12 @@ label:
 
 					}	
 					send(cfd, "File read successfully\n", 100, 0);
-					printf("File Transferred successfully\n");/*Extra*/
+					printf("File Transferred successfully\n");
 					send(cfd, "\n", 100, 0);
 				}
 
 				else
-					send(cfd, "---FILE NOT FOUND---",100,0);
+					send(cfd, "---FILE NOT FOUND---",100,0);//if file doesnt exist in present working directory
 					
 				goto label;
 			}
