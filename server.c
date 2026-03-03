@@ -55,11 +55,6 @@ int main(int argc, char *argv[])
 	
 	char ch[100];
 	
-	/*send(cfd, "\n---------WELCOME TO COMMAND WINDOW----------\n", 100, 0);
-	send(cfd, "\nTO CHANGE DIRECTORY --> cd <directoryName>\n", 100, 0);
-	send(cfd, "TO OPEN FILE --> open <fileName>\n", 100, 0);
-	send(cfd, "TO KNOW PWD --> <path>\n", 100, 0);
-	send(cfd, "TO GO TO PARENT DIRECTORY --> <back>\n", 100, 0);*/
 
 	send(cfd, "\nPlease type the command....\n",100, 0);
 	
