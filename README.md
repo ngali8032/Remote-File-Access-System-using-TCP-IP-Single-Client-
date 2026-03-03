@@ -1,4 +1,3 @@
-📁 Remote File Access System using TCP/IP (Single Client)
 
 🎯 Project Objective
 
